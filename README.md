@@ -2,6 +2,7 @@
 
 With pygame library
 With pokebase for existing pokemon database
+database must be accessible while offline
 
 branches :  
 main  
@@ -17,8 +18,9 @@ sounds
 Pokemon type game with graphical user interface, name, health points, levels, attack power, defense, at least 18 types (who decide characteristics : HP, ATK, DEF), can evolve, with combat system between two pokemons, can miss attack, if life is zero then message with name of winning pokemon, they will be saved in a pokedex.json file. The pokedex will be the team : if a pokemon loses, it disappears from it.
 Each class needs to be in a separate file
 Add pokemon in menu : 
-Activate pokemon from pokedex (latent pokemons from all generation, if you want to add one you click on it and it
+Activate pokemon from pokedex (latent pokemons from all generations, if you want to add one you click on it and it
 will show up in the game)
+database must be accessible while offline
 then it becomes hidden apart from the one you chose and the others you add by defeating
 Access pokedex : from current save
 Add option to heal between fights or menu

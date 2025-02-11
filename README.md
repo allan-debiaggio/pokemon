@@ -3,6 +3,14 @@
 With pygame library
 With pokebase for existing pokemon database
 
+branches :  main
+            preprod
+            menu
+            pokedex
+            combat_system
+            api
+            sounds
+
 ## Description :
 
 Pokemon type game with graphical user interface, name, health points, levels, attack power, defense, at least 18 types (who decide characteristics : HP, ATK, DEF), can evolve, with combat system between two pokemons, can miss attack, if life is zero then message with name of winning pokemon, they will be saved in a pokedex.json file. The pokedex will be the team : if a pokemon loses, it disappears from it.
@@ -26,11 +34,11 @@ We can use existing pokemons or create some, but if we create the art part will 
 
 ## Tasks organisation : 
 
-Menu
-Pokedex.json
-Combat system
-API install for existing pokemons, types, etc (Maybe need some creation for types)
-Musics and Sounds
+Menu (Rayan)
+Pokedex.json (Rayan)
+Combat system (Matthieu)
+API install for existing pokemons, types, etc (Maybe need some creation for types) (Allan)
+Musics and Sounds (Allan)
 
 ### Going further : 
 

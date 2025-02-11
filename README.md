@@ -3,13 +3,14 @@
 With pygame library
 With pokebase for existing pokemon database
 
-branches :  main
-            preprod
-            menu
-            pokedex
-            combat_system
-            api
-            sounds
+branches :  
+main  
+preprod  
+menu  
+pokedex  
+combat_system  
+api  
+sounds  
 
 ## Description :
 

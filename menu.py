@@ -14,21 +14,17 @@ class Button:
         is_hovered = self.rect.collidepoint(mouse_pos)
         color = self.hover_color if is_hovered else self.color
         
-        # Draw button background
         pygame.draw.rect(screen, color, self.rect, border_radius=10)
         
-        # Draw button border
-        border_color = (0, 0, 0)  # Black border
+        border_color = (0, 0, 0) 
         pygame.draw.rect(screen, border_color, self.rect, 3, border_radius=10)
         
-        # Draw button text
         text_surf = self.font.render(self.text, True, (0, 0, 0))
         text_rect = text_surf.get_rect(center=self.rect.center)
         screen.blit(text_surf, text_rect)
         
-        # Draw triangle if hovered
         if is_hovered:
-            triangle_color = (0, 0, 0)  # Black triangle
+            triangle_color = (0, 0, 0) 
             triangle_points = [
                 (self.rect.left + 10, self.rect.centery - 5),
                 (self.rect.left + 10, self.rect.centery + 5),
@@ -45,7 +41,7 @@ class Menu:
     def __init__(self, screen):
         self.screen = screen
         self.font = pygame.font.Font(None, 40)
-        self.background = pygame.image.load("background.jpg")
+        self.background = pygame.image.load("assets/images/menu_background.jpg")
         self.buttons = [
             Button(150, 100, 200, 50, "Start", self.font, (255, 255, 255), (255, 255, 255), self.start_game),
             Button(150, 200, 200, 50, "Options", self.font, (255, 255, 255), (255, 255, 255), self.show_options),

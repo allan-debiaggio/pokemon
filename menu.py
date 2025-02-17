@@ -72,14 +72,13 @@ class SubMenu:
     def __init__(self, screen, switch_to_main_menu):
         self.screen = screen
         self.font = pygame.font.Font(None, 40)
-        self.background = pygame.image.load("assets/images/submenu_background.jpg")  # Different background image
+        self.background = pygame.image.load("assets/images/submenu_background.jpg")
         self.buttons = [
             Button(200, 200, 400, 50, "Resume", self.font, (255, 255, 255), (255, 255, 255), self.resume_game),
             Button(200, 300, 400, 50, "Main Menu", self.font, (255, 255, 255), (255, 255, 255), switch_to_main_menu)
         ]
     
     def draw(self):
-        # Resize background to fit the screen
         background = pygame.transform.scale(self.background, self.screen.get_size())
         self.screen.blit(background, (0, 0))
         for button in self.buttons:

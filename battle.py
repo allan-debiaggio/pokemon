@@ -3,6 +3,8 @@ import requests
 import random
 import io
 import json
+import os
+from PIL import Image, ImageSequence
 
 SAVE_FILE = "save.json"
 
@@ -19,6 +21,7 @@ BLACK = (0, 0, 0)
 RED = (255, 0, 0)
 GREEN = (0, 255, 0)
 GRAY = (128, 128, 128)
+BLUE = (0, 0, 255)
 
 
 font = pygame.font.Font(None, 36)
@@ -146,7 +149,7 @@ class Pokemon:
                 return pygame.transform.scale(image, (150, 150))
         except Exception as e:
             print(f"Erreur de chargement du sprite pour {self.name}: {e}")
-            return pygame.Surface((150, 150))  # return a blank surface
+            return pygame.Surface((150, 150)) 
 
     def calculate_hp(self):
         base_hp = self.stats['hp']
@@ -228,38 +231,38 @@ class Battle:
 
     def perform_attack(self, attacker, defender):
         if random.random() <= 0.1:
-            print(f"{attacker.name} missed their attack!")
-            return
+            return f"{attacker.name} missed their attack!"
         
         base_damage = random.randint(5, 8)
         type_multiplier = self.get_type_multiplier(defender)
         damage = int(base_damage * type_multiplier)
-        print(f"{attacker.name} attacks {defender.name}!")
-        print(f"Type multiplier: {type_multiplier}")
-        print(f"Damage dealt: {damage}")
         defender.take_damage(damage)
+        message = f"{attacker.name} deals {damage} damage!"
+        if type_multiplier > 1:
+            message += " It's super effective!"
+        elif type_multiplier < 1:
+            message += " It's not very effective..."
+        return message
 
     def perform_turn(self):
         if self.turn == "player":
-            self.perform_attack(self.player_pokemon, self.opponent_pokemon)
+            message = self.perform_attack(self.player_pokemon, self.opponent_pokemon)
             self.turn = "opponent"
         else:
-            self.perform_attack(self.opponent_pokemon, self.player_pokemon)
+            message = self.perform_attack(self.opponent_pokemon, self.player_pokemon)
             self.turn = "player"
 
-        # check if the pokemon are fainted
+        # Check Pokémon Status
         if self.player_pokemon.is_fainted():
-            return "opponent_wins"
+            return ("opponent_wins", message)
         elif self.opponent_pokemon.is_fainted():
             exp_gain = self.opponent_pokemon.level * 500
             self.player_pokemon.gain_exp(exp_gain)
-            print(f"{self.player_pokemon.name} gagne {exp_gain} points d'expérience!")
-            return "player_wins"
-        return "continue"
+            return ("player_wins", message)
+        return ("continue", message)
 
-    def get_type_multiplier(self, target_pokemon):
-        attacker = self.player_pokemon if self.turn == "player" else self.opponent_pokemon
-        return attacker.get_type_effectiveness(attacker.types[0], target_pokemon.types)
+    def get_type_multiplier(self, defender):
+        return defender.get_type_effectiveness(self.player_pokemon.types[0], defender.types)
 
 class Pokedex:
     def __init__(self):
@@ -278,7 +281,7 @@ class Pokedex:
             print(f"You already caught a {pokemon.name}!")
 
 def start_new_battle(player_pokemon):
-    """Crée un nouveau combat avec un adversaire adapté au niveau du joueur"""
+    """Creates a new fight with an opponent adapted to the player's level"""
     pokemon_ids = list(range(1, 1026))
     random_pokemon_id = random.choice(pokemon_ids)
     opponent_level = get_random_level(player_pokemon.level)
@@ -286,11 +289,11 @@ def start_new_battle(player_pokemon):
         opponent = Pokemon(random_pokemon_id, opponent_level)
         return Battle(player_pokemon, opponent)
     except Exception as e:
-        print(f"Erreur lors de la création du combat: {e}")
+        print(f"Error creating the fight: {e}")
         return None
 
 def get_random_level(base_level, variance=2):
-    """Génère un niveau aléatoire proche du niveau de base"""
+    """Generates a random level close to the base level"""
     min_level = max(1, base_level - variance)
     max_level = base_level + variance
     return random.randint(min_level, max_level)
@@ -335,6 +338,41 @@ class Game:
         battle = start_new_battle(self.pikachu)
         self.opponent_pokemon = battle.opponent_pokemon  
         self.battle = battle
+
+        # Load animated GIF background
+        try:
+            background_path = os.path.join(os.path.dirname(__file__), "assets", "battle_background.gif")
+            if not os.path.exists(background_path):
+                print(f"Le fichier {background_path} n'existe pas!")
+                self.background_frames = None
+                return
+
+            gif = Image.open(background_path)
+            self.background_frames = []
+            self.current_frame = 0
+            
+            # Convert each frame of GIF to pygame surface
+            for frame in ImageSequence.Iterator(gif):
+                frame_rgb = frame.convert('RGB')
+                frame_str = frame_rgb.tobytes()
+                frame_surface = pygame.image.fromstring(frame_str, frame_rgb.size, 'RGB')
+                frame_surface = pygame.transform.scale(frame_surface, (WIDTH, HEIGHT))
+                self.background_frames.append(frame_surface)
+                
+            self.frame_delay = gif.info.get('duration', 100) / 1000.0
+            self.last_frame_time = pygame.time.get_ticks() / 1000.0
+            
+        except Exception as e:
+            print(f"Error loading background: {e}")
+            self.background_frames = None
+
+        self.battle_messages = []
+        self.message_font = pygame.font.Font(None, 30) 
+
+    def add_battle_message(self, message):
+        self.battle_messages.append(message)
+        if len(self.battle_messages) > 3: 
+            self.battle_messages.pop(0)
 
     def check_game_over(self):
         """Vérifie si tous les Pokémon du joueur sont K.O."""
@@ -386,41 +424,94 @@ class Game:
     def run(self):
         clock = pygame.time.Clock()
         while self.running:
-            screen.fill(WHITE)
+            current_time = pygame.time.get_ticks() / 1000.0
+            
+            # Animate the background
+            if self.background_frames and len(self.background_frames) > 0:
+                if current_time - self.last_frame_time >= self.frame_delay:
+                    self.current_frame = (self.current_frame + 1) % len(self.background_frames)
+                    self.last_frame_time = current_time
+                screen.blit(self.background_frames[self.current_frame], (0, 0))
+            else:
+                screen.fill(WHITE)
 
-            instructions = font.render("Press SPACE to attack", True, BLACK)
-            screen.blit(instructions, (WIDTH//2 - 150, 50))
-            # display the sprites
-            if self.pikachu.sprite:
-                screen.blit(self.pikachu.sprite, (100, 300))
-            if self.opponent_pokemon.sprite:
-                screen.blit(self.opponent_pokemon.sprite, (500, 100))
-            
-            # displaying pokemon info
+            # Create rounded boxes with alpha channel
+            def create_rounded_box(width, height, alpha=200, radius=20):
+                box = pygame.Surface((width, height), pygame.SRCALPHA)
+                box.fill((255, 255, 255, 0))  # Transparent background
+                pygame.draw.rect(box, (255, 255, 255, alpha), box.get_rect(), border_radius=radius)
+                pygame.draw.rect(box, (0, 0, 0, 255), box.get_rect(), 2, border_radius=radius)
+                return box
+
+            # Message box
+            message_box = create_rounded_box(500, 100)
+            screen.blit(message_box, (WIDTH//2 - 250, 10))
+
+            # Display battle messages
+            for i, message in enumerate(self.battle_messages):
+                message_text = self.message_font.render(message, True, BLACK)
+                screen.blit(message_text, (WIDTH//2 - 240, 20 + i * 25))
+
+            # Player info box
+            player_box = create_rounded_box(300, 100)
+            screen.blit(player_box, (50, 480))
+
+            # Opponent info box
+            opponent_box = create_rounded_box(300, 80)
+            screen.blit(opponent_box, (450, 130))
+
+            # Buttons box with smaller radius
+            button_radius = 15
+            quit_box = create_rounded_box(120, 40, alpha=255, radius=button_radius)
+            pokedex_box = create_rounded_box(120, 40, alpha=255, radius=button_radius)
+            save_box = create_rounded_box(120, 40, alpha=255, radius=button_radius)
+
+            screen.blit(quit_box, (650, 500))
+            screen.blit(pokedex_box, (650, 450))
+            screen.blit(save_box, (650, 400))
+
+            # Player Pokémon info
             hp_text = font.render(f"{self.pikachu.name} HP: {self.pikachu.current_hp}/{self.pikachu.hp}", True, BLACK)
-            screen.blit(hp_text, (100, 450))
-            
-            # display opponent info
+            screen.blit(hp_text, (60, 490))  
+            exp_text = font.render(f"Level: {self.pikachu.level}", True, BLACK)
+            screen.blit(exp_text, (60, 520))  
+            exp_bar = pygame.Surface((150, 5))
+            exp_bar.fill(GRAY)
+            exp_fill = (self.pikachu.exp / self.pikachu.exp_needed) * 200
+            pygame.draw.rect(screen, BLUE, (60, 550, exp_fill, 20))  
+            pygame.draw.rect(screen, BLACK, (60, 550, 200, 20), 2)  
+
+            # Opponent Pokémon info
             opponent_info = font.render(f"{self.opponent_pokemon.name} (Lvl.{self.opponent_pokemon.level})", True, BLACK)
-            screen.blit(opponent_info, (500, 200)) 
+            screen.blit(opponent_info, (460, 140))
             hp_text = font.render(f"HP: {self.opponent_pokemon.current_hp}/{self.opponent_pokemon.hp}", True, BLACK)
-            screen.blit(hp_text, (500, 250))
+            screen.blit(hp_text, (460, 170))
+
+            # Display Pokémon sprites
+            if self.pikachu.sprite:
+                screen.blit(self.pikachu.sprite, (200, 350))
+            if self.opponent_pokemon.sprite:
+                screen.blit(self.opponent_pokemon.sprite, (475, 200))
+
+            # Quit button
+            pygame.draw.rect(screen, WHITE, (650, 500, 120, 40), border_radius=15)
+            pygame.draw.rect(screen, BLACK, (650, 500, 120, 40), 2, border_radius=15)  
             
-            # display player level and exp
-            exp_text = font.render(f"Level: {self.pikachu.level} EXP: {self.pikachu.exp}/{self.pikachu.exp_needed}", True, BLACK)
-            screen.blit(exp_text, (100, 500))
+            # Pokedex button
+            pygame.draw.rect(screen, WHITE, (650, 450, 120, 40), border_radius=15)
+            pygame.draw.rect(screen, BLACK, (650, 450, 120, 40), 2, border_radius=15)  
             
-            # Buttons
-            pygame.draw.rect(screen, GRAY, (650, 500, 120, 40))  # Abandonner
-            pygame.draw.rect(screen, GRAY, (650, 450, 120, 40))  # Pokedex
-            pygame.draw.rect(screen, GRAY, (650, 400, 120, 40))  # Save
+            # Save button
+            pygame.draw.rect(screen, WHITE, (650, 400, 120, 40), border_radius=15)
+            pygame.draw.rect(screen, BLACK, (650, 400, 120, 40), 2, border_radius=15)  
             
+            # Button texts
             quit_text = font.render("Quit", True, BLACK)
             pokedex_text = font.render("Pokedex", True, BLACK)
             save_text = font.render("Save", True, BLACK)
-            screen.blit(quit_text, (660, 510))
-            screen.blit(pokedex_text, (670, 460))
-            screen.blit(save_text, (660, 410))
+            screen.blit(quit_text, (685, 510))
+            screen.blit(pokedex_text, (660, 460))
+            screen.blit(save_text, (685, 410))
 
             # manage events
             for event in pygame.event.get():
@@ -428,26 +519,27 @@ class Game:
                     self.running = False
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_SPACE:  # SPACE for attack
-                        result = self.battle.perform_turn()
+                        result, message = self.battle.perform_turn()
+                        self.add_battle_message(message)
+                        
                         if result != "continue":
-                            print(f"Battle ended! Result: {result}")
                             if result == "player_wins":
+                                self.add_battle_message(f"{self.pikachu.name} wins!")
                                 self.pokedex.add_pokemon(self.opponent_pokemon)
-                                # crate a new battle with the same opponent
                                 self.battle = start_new_battle(self.pikachu)
-                                if self.battle is None:
-                                    self.running = False
-                                else:
+                                if self.battle:
                                     self.opponent_pokemon = self.battle.opponent_pokemon
                                     self.pikachu.current_hp = min(self.pikachu.current_hp + 20, self.pikachu.hp)
+                                else:
+                                    self.running = False
                             elif result == "opponent_wins":
+                                self.add_battle_message(f"{self.opponent_pokemon.name} wins!")
                                 if self.check_game_over():
-                                    print("All your Pokemon are KO! Game Over!")
+                                    self.add_battle_message("All your Pokemon are KO! Game Over!")
                                     self.running = False
                                 else:
-                                    print("Choose another Pokemon from your Pokedex!")
+                                    self.add_battle_message("Choose another Pokemon from your Pokedex!")
                                     self.show_pokedex()
-                                
                                     self.battle = Battle(self.pikachu, self.opponent_pokemon)
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     mouse_pos = pygame.mouse.get_pos()
@@ -463,7 +555,7 @@ class Game:
             clock.tick(30)  # Limite à 30 FPS
 
     def cleanup(self):
-        """Nettoie les ressources avant de quitter"""
+        """Clean up resources before exiting"""
         pygame.quit()
 
 if __name__ == "__main__":

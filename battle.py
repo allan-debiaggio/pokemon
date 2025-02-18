@@ -421,6 +421,13 @@ class Game:
                         
             pygame.display.flip()
 
+    def heal_all_pokemon(self):
+        """Heals all Pokémon in the Pokedex for 50% of their HP"""
+        for pokemon in self.pokedex.caught_pokemon:
+            heal_amount = pokemon.hp * 0.5  
+            pokemon.current_hp = min(pokemon.current_hp + int(heal_amount), pokemon.hp)
+            self.add_battle_message(f"{pokemon.name} recovered {int(heal_amount)} HP!")
+
     def run(self):
         clock = pygame.time.Clock()
         while self.running:
@@ -526,10 +533,11 @@ class Game:
                             if result == "player_wins":
                                 self.add_battle_message(f"{self.pikachu.name} wins!")
                                 self.pokedex.add_pokemon(self.opponent_pokemon)
+
+                                self.heal_all_pokemon()
                                 self.battle = start_new_battle(self.pikachu)
                                 if self.battle:
                                     self.opponent_pokemon = self.battle.opponent_pokemon
-                                    self.pikachu.current_hp = min(self.pikachu.current_hp + 20, self.pikachu.hp)
                                 else:
                                     self.running = False
                             elif result == "opponent_wins":

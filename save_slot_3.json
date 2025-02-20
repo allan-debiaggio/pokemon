@@ -1,0 +1,299 @@
+{
+    "game_name": "",
+    "pokedex": {
+        "raichu": {
+            "level": 87,
+            "hp": 200,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
+            "local_image_path": "assets\\poke_image\\raichu.png",
+            "evolution": "pikachu"
+        },
+        "heatmor": {
+            "level": 88,
+            "hp": 74,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/631.png",
+            "local_image_path": "assets\\poke_image\\heatmor.png",
+            "evolution": null
+        },
+        "mabosstiff": {
+            "level": 20,
+            "hp": 62,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/943.png",
+            "local_image_path": "assets\\poke_image\\mabosstiff.png",
+            "evolution": "mabosstiff"
+        },
+        "ferrothorn": {
+            "level": 23,
+            "hp": 67,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/598.png",
+            "local_image_path": "assets\\poke_image\\ferrothorn.png",
+            "evolution": "ferrothorn"
+        },
+        "koraidon": {
+            "level": 12,
+            "hp": 46,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1007.png",
+            "local_image_path": "assets\\poke_image\\koraidon.png",
+            "evolution": null
+        },
+        "decidueye": {
+            "level": 20,
+            "hp": 61,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/724.png",
+            "local_image_path": "assets\\poke_image\\decidueye.png",
+            "evolution": "dartrix"
+        },
+        "dewpider": {
+            "level": 19,
+            "hp": 43,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/751.png",
+            "local_image_path": "assets\\poke_image\\dewpider.png",
+            "evolution": "araquanid"
+        },
+        "sigilyph": {
+            "level": 28,
+            "hp": 78,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/561.png",
+            "local_image_path": "assets\\poke_image\\sigilyph.png",
+            "evolution": null
+        },
+        "ninetales": {
+            "level": 29,
+            "hp": 81,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
+            "local_image_path": "assets\\poke_image\\ninetales.png",
+            "evolution": "ninetales"
+        },
+        "okidogi": {
+            "level": 11,
+            "hp": 40,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1014.png",
+            "local_image_path": "assets\\poke_image\\okidogi.png",
+            "evolution": null
+        },
+        "shiinotic": {
+            "level": 17,
+            "hp": 47,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/756.png",
+            "local_image_path": "assets\\poke_image\\shiinotic.png",
+            "evolution": "shiinotic"
+        },
+        "registeel": {
+            "level": 23,
+            "hp": 69,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/379.png",
+            "local_image_path": "assets\\poke_image\\registeel.png",
+            "evolution": null
+        },
+        "charmander": {
+            "level": 28,
+            "hp": 59,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+            "local_image_path": "assets\\poke_image\\charmander.png",
+            "evolution": "charmeleon"
+        },
+        "dodrio": {
+            "level": 18,
+            "hp": 49,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png",
+            "local_image_path": "assets\\poke_image\\dodrio.png",
+            "evolution": "dodrio"
+        },
+        "gouging-fire": {
+            "level": 22,
+            "hp": 78,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1020.png",
+            "local_image_path": "assets\\poke_image\\gouging-fire.png",
+            "evolution": null
+        },
+        "houndstone": {
+            "level": 27,
+            "hp": 75,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/972.png",
+            "local_image_path": "assets\\poke_image\\houndstone.png",
+            "evolution": "houndstone"
+        },
+        "pinsir": {
+            "level": 15,
+            "hp": 44,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png",
+            "local_image_path": "assets\\poke_image\\pinsir.png",
+            "evolution": null
+        },
+        "tympole": {
+            "level": 19,
+            "hp": 48,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/535.png",
+            "local_image_path": "assets\\poke_image\\tympole.png",
+            "evolution": "palpitoad"
+        },
+        "stufful": {
+            "level": 33,
+            "hp": 89,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/759.png",
+            "local_image_path": "assets\\poke_image\\stufful.png",
+            "evolution": "bewear"
+        },
+        "wimpod": {
+            "level": 35,
+            "hp": 62,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/767.png",
+            "local_image_path": "assets\\poke_image\\wimpod.png",
+            "evolution": "golisopod"
+        },
+        "tepig": {
+            "level": 41,
+            "hp": 104,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/498.png",
+            "local_image_path": "assets\\poke_image\\tepig.png",
+            "evolution": "pignite"
+        },
+        "shiftry": {
+            "level": 46,
+            "hp": 138,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/275.png",
+            "local_image_path": "assets\\poke_image\\shiftry.png",
+            "evolution": "nuzleaf"
+        },
+        "ninjask": {
+            "level": 30,
+            "hp": 76,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/291.png",
+            "local_image_path": "assets\\poke_image\\ninjask.png",
+            "evolution": "ninjask"
+        },
+        "roselia": {
+            "level": 35,
+            "hp": 80,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/315.png",
+            "local_image_path": "assets\\poke_image\\roselia.png",
+            "evolution": "roselia"
+        },
+        "skarmory": {
+            "level": 38,
+            "hp": 97,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png",
+            "local_image_path": "assets\\poke_image\\skarmory.png",
+            "evolution": null
+        },
+        "beedrill": {
+            "level": 43,
+            "hp": 108,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
+            "local_image_path": "assets\\poke_image\\beedrill.png",
+            "evolution": "kakuna"
+        },
+        "vespiquen": {
+            "level": 49,
+            "hp": 127,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/416.png",
+            "local_image_path": "assets\\poke_image\\vespiquen.png",
+            "evolution": "vespiquen"
+        },
+        "sentret": {
+            "level": 51,
+            "hp": 96,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/161.png",
+            "local_image_path": "assets\\poke_image\\sentret.png",
+            "evolution": "furret"
+        },
+        "whismur": {
+            "level": 60,
+            "hp": 146,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/293.png",
+            "local_image_path": "assets\\poke_image\\whismur.png",
+            "evolution": "loudred"
+        },
+        "spritzee": {
+            "level": 52,
+            "hp": 143,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/682.png",
+            "local_image_path": "assets\\poke_image\\spritzee.png",
+            "evolution": "aromatisse"
+        },
+        "salandit": {
+            "level": 58,
+            "hp": 123,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/757.png",
+            "local_image_path": "assets\\poke_image\\salandit.png",
+            "evolution": "salazzle"
+        },
+        "accelgor": {
+            "level": 61,
+            "hp": 168,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/617.png",
+            "local_image_path": "assets\\poke_image\\accelgor.png",
+            "evolution": "accelgor"
+        },
+        "krokorok": {
+            "level": 68,
+            "hp": 159,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/552.png",
+            "local_image_path": "assets\\poke_image\\krokorok.png",
+            "evolution": "krokorok"
+        },
+        "blipbug": {
+            "level": 63,
+            "hp": 104,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/824.png",
+            "local_image_path": "assets\\poke_image\\blipbug.png",
+            "evolution": "dottler"
+        },
+        "absol": {
+            "level": 74,
+            "hp": 180,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+            "local_image_path": "assets\\poke_image\\absol.png",
+            "evolution": null
+        },
+        "hoppip": {
+            "level": 66,
+            "hp": 122,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/187.png",
+            "local_image_path": "assets\\poke_image\\hoppip.png",
+            "evolution": "skiploom"
+        },
+        "torkoal": {
+            "level": 75,
+            "hp": 190,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/324.png",
+            "local_image_path": "assets\\poke_image\\torkoal.png",
+            "evolution": null
+        },
+        "tinkatink": {
+            "level": 77,
+            "hp": 164,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/957.png",
+            "local_image_path": "assets\\poke_image\\tinkatink.png",
+            "evolution": "tinkatuff"
+        },
+        "nosepass": {
+            "level": 78,
+            "hp": 134,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/299.png",
+            "local_image_path": "assets\\poke_image\\nosepass.png",
+            "evolution": "probopass"
+        },
+        "minior-red-meteor": {
+            "level": 83,
+            "hp": 192,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/774.png",
+            "local_image_path": "assets\\poke_image\\minior-red-meteor.png",
+            "evolution": null
+        },
+        "rellor": {
+            "level": 89,
+            "hp": 171,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/953.png",
+            "local_image_path": "assets\\poke_image\\rellor.png",
+            "evolution": "rabsca"
+        },
+        "quilava": {
+            "level": 84,
+            "hp": 191,
+            "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/156.png",
+            "local_image_path": "assets\\poke_image\\quilava.png",
+            "evolution": "quilava"
+        }
+    }
+}

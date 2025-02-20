@@ -1,0 +1,1737 @@
+{
+    "raichu": {
+        "level": 21,
+        "xp": 1000,
+        "hp": 28,
+        "max_hp": 56,
+        "data": {
+            "id": 26,
+            "name": "raichu",
+            "height": 8,
+            "weight": 300,
+            "PV": 60,
+            "ATTACK stats": 90,
+            "DEFENS": 55,
+            "ATTACKSPE": 90,
+            "DEFENSE SPE": 80,
+            "VITESSE": 110,
+            "ATTACK list": [
+                {
+                    "move": "mega-punch",
+                    "level_learned": 0
+                },
+                {
+                    "move": "pay-day",
+                    "level_learned": 0
+                },
+                {
+                    "move": "thunder-punch",
+                    "level_learned": 0
+                },
+                {
+                    "move": "slam",
+                    "level_learned": 1
+                },
+                {
+                    "move": "mega-kick",
+                    "level_learned": 0
+                },
+                {
+                    "move": "headbutt",
+                    "level_learned": 0
+                },
+                {
+                    "move": "body-slam",
+                    "level_learned": 0
+                },
+                {
+                    "move": "take-down",
+                    "level_learned": 0
+                },
+                {
+                    "move": "double-edge",
+                    "level_learned": 0
+                },
+                {
+                    "move": "tail-whip",
+                    "level_learned": 1
+                },
+                {
+                    "move": "growl",
+                    "level_learned": 1
+                },
+                {
+                    "move": "surf",
+                    "level_learned": 0
+                },
+                {
+                    "move": "hyper-beam",
+                    "level_learned": 0
+                },
+                {
+                    "move": "submission",
+                    "level_learned": 0
+                },
+                {
+                    "move": "counter",
+                    "level_learned": 0
+                },
+                {
+                    "move": "seismic-toss",
+                    "level_learned": 0
+                },
+                {
+                    "move": "strength",
+                    "level_learned": 0
+                },
+                {
+                    "move": "thunder-shock",
+                    "level_learned": 1
+                },
+                {
+                    "move": "thunderbolt",
+                    "level_learned": 0
+                },
+                {
+                    "move": "thunder-wave",
+                    "level_learned": 1
+                },
+                {
+                    "move": "thunder",
+                    "level_learned": 0
+                },
+                {
+                    "move": "dig",
+                    "level_learned": 0
+                },
+                {
+                    "move": "toxic",
+                    "level_learned": 0
+                },
+                {
+                    "move": "agility",
+                    "level_learned": 1
+                },
+                {
+                    "move": "quick-attack",
+                    "level_learned": 1
+                },
+                {
+                    "move": "rage",
+                    "level_learned": 0
+                },
+                {
+                    "move": "mimic",
+                    "level_learned": 0
+                },
+                {
+                    "move": "double-team",
+                    "level_learned": 0
+                },
+                {
+                    "move": "defense-curl",
+                    "level_learned": 0
+                },
+                {
+                    "move": "light-screen",
+                    "level_learned": 0
+                },
+                {
+                    "move": "reflect",
+                    "level_learned": 0
+                },
+                {
+                    "move": "bide",
+                    "level_learned": 0
+                },
+                {
+                    "move": "swift",
+                    "level_learned": 0
+                },
+                {
+                    "move": "skull-bash",
+                    "level_learned": 0
+                },
+                {
+                    "move": "flash",
+                    "level_learned": 0
+                },
+                {
+                    "move": "rest",
+                    "level_learned": 0
+                },
+                {
+                    "move": "substitute",
+                    "level_learned": 0
+                },
+                {
+                    "move": "thief",
+                    "level_learned": 0
+                },
+                {
+                    "move": "snore",
+                    "level_learned": 0
+                },
+                {
+                    "move": "curse",
+                    "level_learned": 0
+                },
+                {
+                    "move": "reversal",
+                    "level_learned": 0
+                },
+                {
+                    "move": "protect",
+                    "level_learned": 0
+                },
+                {
+                    "move": "sweet-kiss",
+                    "level_learned": 1
+                },
+                {
+                    "move": "mud-slap",
+                    "level_learned": 0
+                },
+                {
+                    "move": "zap-cannon",
+                    "level_learned": 0
+                },
+                {
+                    "move": "detect",
+                    "level_learned": 0
+                },
+                {
+                    "move": "endure",
+                    "level_learned": 0
+                },
+                {
+                    "move": "charm",
+                    "level_learned": 1
+                },
+                {
+                    "move": "rollout",
+                    "level_learned": 0
+                },
+                {
+                    "move": "swagger",
+                    "level_learned": 0
+                },
+                {
+                    "move": "spark",
+                    "level_learned": 1
+                },
+                {
+                    "move": "attract",
+                    "level_learned": 0
+                },
+                {
+                    "move": "sleep-talk",
+                    "level_learned": 0
+                },
+                {
+                    "move": "return",
+                    "level_learned": 0
+                },
+                {
+                    "move": "frustration",
+                    "level_learned": 0
+                },
+                {
+                    "move": "safeguard",
+                    "level_learned": 0
+                },
+                {
+                    "move": "dynamic-punch",
+                    "level_learned": 0
+                },
+                {
+                    "move": "encore",
+                    "level_learned": 1
+                },
+                {
+                    "move": "iron-tail",
+                    "level_learned": 0
+                },
+                {
+                    "move": "hidden-power",
+                    "level_learned": 0
+                },
+                {
+                    "move": "rain-dance",
+                    "level_learned": 0
+                },
+                {
+                    "move": "rock-smash",
+                    "level_learned": 0
+                },
+                {
+                    "move": "fake-out",
+                    "level_learned": 1
+                },
+                {
+                    "move": "uproar",
+                    "level_learned": 0
+                },
+                {
+                    "move": "facade",
+                    "level_learned": 0
+                },
+                {
+                    "move": "focus-punch",
+                    "level_learned": 0
+                },
+                {
+                    "move": "charge",
+                    "level_learned": 0
+                },
+                {
+                    "move": "helping-hand",
+                    "level_learned": 0
+                },
+                {
+                    "move": "brick-break",
+                    "level_learned": 0
+                },
+                {
+                    "move": "knock-off",
+                    "level_learned": 0
+                },
+                {
+                    "move": "endeavor",
+                    "level_learned": 0
+                },
+                {
+                    "move": "secret-power",
+                    "level_learned": 0
+                },
+                {
+                    "move": "signal-beam",
+                    "level_learned": 0
+                },
+                {
+                    "move": "covet",
+                    "level_learned": 0
+                },
+                {
+                    "move": "calm-mind",
+                    "level_learned": 0
+                },
+                {
+                    "move": "shock-wave",
+                    "level_learned": 0
+                },
+                {
+                    "move": "natural-gift",
+                    "level_learned": 0
+                },
+                {
+                    "move": "feint",
+                    "level_learned": 1
+                },
+                {
+                    "move": "fling",
+                    "level_learned": 0
+                },
+                {
+                    "move": "magnet-rise",
+                    "level_learned": 0
+                },
+                {
+                    "move": "focus-blast",
+                    "level_learned": 0
+                },
+                {
+                    "move": "giga-impact",
+                    "level_learned": 0
+                },
+                {
+                    "move": "nasty-plot",
+                    "level_learned": 1
+                },
+                {
+                    "move": "discharge",
+                    "level_learned": 1
+                },
+                {
+                    "move": "captivate",
+                    "level_learned": 0
+                },
+                {
+                    "move": "grass-knot",
+                    "level_learned": 0
+                },
+                {
+                    "move": "charge-beam",
+                    "level_learned": 0
+                },
+                {
+                    "move": "electro-ball",
+                    "level_learned": 1
+                },
+                {
+                    "move": "round",
+                    "level_learned": 0
+                },
+                {
+                    "move": "echoed-voice",
+                    "level_learned": 0
+                },
+                {
+                    "move": "volt-switch",
+                    "level_learned": 0
+                },
+                {
+                    "move": "electroweb",
+                    "level_learned": 0
+                },
+                {
+                    "move": "wild-charge",
+                    "level_learned": 0
+                },
+                {
+                    "move": "disarming-voice",
+                    "level_learned": 0
+                },
+                {
+                    "move": "draining-kiss",
+                    "level_learned": 0
+                },
+                {
+                    "move": "play-rough",
+                    "level_learned": 0
+                },
+                {
+                    "move": "play-nice",
+                    "level_learned": 1
+                },
+                {
+                    "move": "confide",
+                    "level_learned": 0
+                },
+                {
+                    "move": "eerie-impulse",
+                    "level_learned": 0
+                },
+                {
+                    "move": "electric-terrain",
+                    "level_learned": 0
+                },
+                {
+                    "move": "nuzzle",
+                    "level_learned": 1
+                },
+                {
+                    "move": "laser-focus",
+                    "level_learned": 0
+                },
+                {
+                    "move": "speed-swap",
+                    "level_learned": 0
+                },
+                {
+                    "move": "brutal-swing",
+                    "level_learned": 0
+                },
+                {
+                    "move": "rising-voltage",
+                    "level_learned": 0
+                },
+                {
+                    "move": "tera-blast",
+                    "level_learned": 0
+                },
+                {
+                    "move": "trailblaze",
+                    "level_learned": 0
+                },
+                {
+                    "move": "alluring-voice",
+                    "level_learned": 0
+                },
+                {
+                    "move": "upper-hand",
+                    "level_learned": 0
+                }
+            ],
+            "TYPE": [
+                "electric"
+            ],
+            "EVOLUTION_LEVEL": 16,
+            "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
+            "local_image_path": "assets\\poke_image\\raichu.png"
+        }
+    },
+    "magby": {
+        "level": 20,
+        "xp": 300,
+        "hp": 3,
+        "max_hp": 48,
+        "data": {
+            "id": 240,
+            "name": "magby",
+            "height": 7,
+            "weight": 214,
+            "PV": 45,
+            "ATTACK stats": 75,
+            "DEFENS": 37,
+            "ATTACKSPE": 70,
+            "DEFENSE SPE": 55,
+            "VITESSE": 83,
+            "ATTACK list": [
+                {
+                    "move": "karate-chop",
+                    "level_learned": 0
+                },
+                {
+                    "move": "mega-punch",
+                    "level_learned": 0
+                },
+                {
+                    "move": "fire-punch",
+                    "level_learned": 19
+                },
+                {
+                    "move": "thunder-punch",
+                    "level_learned": 0
+                },
+                {
+                    "move": "mega-kick",
+                    "level_learned": 0
+                },
+                {
+                    "move": "headbutt",
+                    "level_learned": 0
+                },
+                {
+                    "move": "tackle",
+                    "level_learned": 6
+                },
+                {
+                    "move": "body-slam",
+                    "level_learned": 0
+                },
+                {
+                    "move": "take-down",
+                    "level_learned": 0
+                },
+                {
+                    "move": "double-edge",
+                    "level_learned": 0
+                },
+                {
+                    "move": "leer",
+                    "level_learned": 7
+                },
+                {
+                    "move": "ember",
+                    "level_learned": 1
+                },
+                {
+                    "move": "flamethrower",
+                    "level_learned": 37
+                },
+                {
+                    "move": "low-kick",
+                    "level_learned": 36
+                },
+                {
+                    "move": "counter",
+                    "level_learned": 0
+                },
+                {
+                    "move": "seismic-toss",
+                    "level_learned": 0
+                },
+                {
+                    "move": "fire-spin",
+                    "level_learned": 19
+                },
+                {
+                    "move": "toxic",
+                    "level_learned": 0
+                },
+                {
+                    "move": "psychic",
+                    "level_learned": 0
+                },
+                {
+                    "move": "mimic",
+                    "level_learned": 0
+                },
+                {
+                    "move": "screech",
+                    "level_learned": 0
+                },
+                {
+                    "move": "double-team",
+                    "level_learned": 0
+                },
+                {
+                    "move": "smokescreen",
+                    "level_learned": 25
+                },
+                {
+                    "move": "confuse-ray",
+                    "level_learned": 43
+                },
+                {
+                    "move": "barrier",
+                    "level_learned": 0
+                },
+                {
+                    "move": "focus-energy",
+                    "level_learned": 0
+                },
+                {
+                    "move": "smog",
+                    "level_learned": 13
+                },
+                {
+                    "move": "fire-blast",
+                    "level_learned": 49
+                },
+                {
+                    "move": "poison-gas",
+                    "level_learned": 18
+                },
+                {
+                    "move": "rest",
+                    "level_learned": 0
+                },
+                {
+                    "move": "substitute",
+                    "level_learned": 0
+                },
+                {
+                    "move": "thief",
+                    "level_learned": 0
+                },
+                {
+                    "move": "flame-wheel",
+                    "level_learned": 16
+                },
+                {
+                    "move": "snore",
+                    "level_learned": 0
+                },
+                {
+                    "move": "curse",
+                    "level_learned": 0
+                },
+                {
+                    "move": "protect",
+                    "level_learned": 0
+                },
+                {
+                    "move": "mach-punch",
+                    "level_learned": 0
+                },
+                {
+                    "move": "scary-face",
+                    "level_learned": 24
+                },
+                {
+                    "move": "feint-attack",
+                    "level_learned": 16
+                },
+                {
+                    "move": "belly-drum",
+                    "level_learned": 0
+                },
+                {
+                    "move": "mud-slap",
+                    "level_learned": 0
+                },
+                {
+                    "move": "detect",
+                    "level_learned": 0
+                },
+                {
+                    "move": "endure",
+                    "level_learned": 0
+                },
+                {
+                    "move": "swagger",
+                    "level_learned": 0
+                },
+                {
+                    "move": "attract",
+                    "level_learned": 0
+                },
+                {
+                    "move": "sleep-talk",
+                    "level_learned": 0
+                },
+                {
+                    "move": "return",
+                    "level_learned": 0
+                },
+                {
+                    "move": "frustration",
+                    "level_learned": 0
+                },
+                {
+                    "move": "dynamic-punch",
+                    "level_learned": 0
+                },
+                {
+                    "move": "iron-tail",
+                    "level_learned": 0
+                },
+                {
+                    "move": "hidden-power",
+                    "level_learned": 0
+                },
+                {
+                    "move": "cross-chop",
+                    "level_learned": 0
+                },
+                {
+                    "move": "sunny-day",
+                    "level_learned": 31
+                },
+                {
+                    "move": "rock-smash",
+                    "level_learned": 0
+                },
+                {
+                    "move": "uproar",
+                    "level_learned": 0
+                },
+                {
+                    "move": "heat-wave",
+                    "level_learned": 0
+                },
+                {
+                    "move": "will-o-wisp",
+                    "level_learned": 0
+                },
+                {
+                    "move": "facade",
+                    "level_learned": 0
+                },
+                {
+                    "move": "focus-punch",
+                    "level_learned": 0
+                },
+                {
+                    "move": "follow-me",
+                    "level_learned": 0
+                },
+                {
+                    "move": "helping-hand",
+                    "level_learned": 0
+                },
+                {
+                    "move": "brick-break",
+                    "level_learned": 0
+                },
+                {
+                    "move": "secret-power",
+                    "level_learned": 0
+                },
+                {
+                    "move": "overheat",
+                    "level_learned": 0
+                },
+                {
+                    "move": "covet",
+                    "level_learned": 0
+                },
+                {
+                    "move": "natural-gift",
+                    "level_learned": 0
+                },
+                {
+                    "move": "fling",
+                    "level_learned": 0
+                },
+                {
+                    "move": "power-swap",
+                    "level_learned": 0
+                },
+                {
+                    "move": "flare-blitz",
+                    "level_learned": 0
+                },
+                {
+                    "move": "poison-jab",
+                    "level_learned": 0
+                },
+                {
+                    "move": "lava-plume",
+                    "level_learned": 34
+                },
+                {
+                    "move": "captivate",
+                    "level_learned": 0
+                },
+                {
+                    "move": "flame-burst",
+                    "level_learned": 28
+                },
+                {
+                    "move": "flame-charge",
+                    "level_learned": 0
+                },
+                {
+                    "move": "acid-spray",
+                    "level_learned": 0
+                },
+                {
+                    "move": "round",
+                    "level_learned": 0
+                },
+                {
+                    "move": "clear-smog",
+                    "level_learned": 19
+                },
+                {
+                    "move": "incinerate",
+                    "level_learned": 0
+                },
+                {
+                    "move": "dual-chop",
+                    "level_learned": 0
+                },
+                {
+                    "move": "belch",
+                    "level_learned": 0
+                },
+                {
+                    "move": "confide",
+                    "level_learned": 0
+                },
+                {
+                    "move": "power-up-punch",
+                    "level_learned": 0
+                },
+                {
+                    "move": "burning-jealousy",
+                    "level_learned": 0
+                },
+                {
+                    "move": "tera-blast",
+                    "level_learned": 0
+                },
+                {
+                    "move": "temper-flare",
+                    "level_learned": 0
+                }
+            ],
+            "TYPE": [
+                "fire"
+            ],
+            "EVOLUTION_LEVEL": 30,
+            "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/240.png",
+            "local_image_path": "assets\\poke_image\\magby.png"
+        }
+    },
+    "flareon": {
+        "level": 21,
+        "xp": 1500,
+        "hp": 58,
+        "max_hp": 58,
+        "data": {
+            "id": 136,
+            "name": "flareon",
+            "height": 9,
+            "weight": 250,
+            "PV": 65,
+            "ATTACK stats": 130,
+            "DEFENS": 60,
+            "ATTACKSPE": 95,
+            "DEFENSE SPE": 110,
+            "VITESSE": 65,
+            "ATTACK list": [
+                {
+                    "move": "pay-day",
+                    "level_learned": 0
+                },
+                {
+                    "move": "double-kick",
+                    "level_learned": 10
+                },
+                {
+                    "move": "sand-attack",
+                    "level_learned": 1
+                },
+                {
+                    "move": "headbutt",
+                    "level_learned": 0
+                },
+                {
+                    "move": "tackle",
+                    "level_learned": 1
+                },
+                {
+                    "move": "body-slam",
+                    "level_learned": 0
+                },
+                {
+                    "move": "take-down",
+                    "level_learned": 0
+                },
+                {
+                    "move": "double-edge",
+                    "level_learned": 0
+                },
+                {
+                    "move": "tail-whip",
+                    "level_learned": 37
+                },
+                {
+                    "move": "leer",
+                    "level_learned": 42
+                },
+                {
+                    "move": "bite",
+                    "level_learned": 40
+                },
+                {
+                    "move": "growl",
+                    "level_learned": 1
+                },
+                {
+                    "move": "roar",
+                    "level_learned": 0
+                },
+                {
+                    "move": "ember",
+                    "level_learned": 1
+                },
+                {
+                    "move": "flamethrower",
+                    "level_learned": 54
+                },
+                {
+                    "move": "hyper-beam",
+                    "level_learned": 0
+                },
+                {
+                    "move": "strength",
+                    "level_learned": 0
+                },
+                {
+                    "move": "fire-spin",
+                    "level_learned": 44
+                },
+                {
+                    "move": "dig",
+                    "level_learned": 0
+                },
+                {
+                    "move": "toxic",
+                    "level_learned": 0
+                },
+                {
+                    "move": "quick-attack",
+                    "level_learned": 1
+                },
+                {
+                    "move": "rage",
+                    "level_learned": 48
+                },
+                {
+                    "move": "mimic",
+                    "level_learned": 0
+                },
+                {
+                    "move": "double-team",
+                    "level_learned": 0
+                },
+                {
+                    "move": "reflect",
+                    "level_learned": 0
+                },
+                {
+                    "move": "focus-energy",
+                    "level_learned": 24
+                },
+                {
+                    "move": "bide",
+                    "level_learned": 0
+                },
+                {
+                    "move": "smog",
+                    "level_learned": 42
+                },
+                {
+                    "move": "fire-blast",
+                    "level_learned": 0
+                },
+                {
+                    "move": "swift",
+                    "level_learned": 0
+                },
+                {
+                    "move": "skull-bash",
+                    "level_learned": 0
+                },
+                {
+                    "move": "rest",
+                    "level_learned": 0
+                },
+                {
+                    "move": "substitute",
+                    "level_learned": 0
+                },
+                {
+                    "move": "snore",
+                    "level_learned": 0
+                },
+                {
+                    "move": "curse",
+                    "level_learned": 0
+                },
+                {
+                    "move": "protect",
+                    "level_learned": 0
+                },
+                {
+                    "move": "scary-face",
+                    "level_learned": 64
+                },
+                {
+                    "move": "mud-slap",
+                    "level_learned": 0
+                },
+                {
+                    "move": "zap-cannon",
+                    "level_learned": 0
+                },
+                {
+                    "move": "detect",
+                    "level_learned": 0
+                },
+                {
+                    "move": "endure",
+                    "level_learned": 0
+                },
+                {
+                    "move": "charm",
+                    "level_learned": 1
+                },
+                {
+                    "move": "swagger",
+                    "level_learned": 0
+                },
+                {
+                    "move": "attract",
+                    "level_learned": 0
+                },
+                {
+                    "move": "sleep-talk",
+                    "level_learned": 0
+                },
+                {
+                    "move": "heal-bell",
+                    "level_learned": 0
+                },
+                {
+                    "move": "return",
+                    "level_learned": 0
+                },
+                {
+                    "move": "frustration",
+                    "level_learned": 0
+                },
+                {
+                    "move": "baton-pass",
+                    "level_learned": 1
+                },
+                {
+                    "move": "iron-tail",
+                    "level_learned": 0
+                },
+                {
+                    "move": "hidden-power",
+                    "level_learned": 0
+                },
+                {
+                    "move": "rain-dance",
+                    "level_learned": 0
+                },
+                {
+                    "move": "sunny-day",
+                    "level_learned": 0
+                },
+                {
+                    "move": "shadow-ball",
+                    "level_learned": 0
+                },
+                {
+                    "move": "rock-smash",
+                    "level_learned": 0
+                },
+                {
+                    "move": "heat-wave",
+                    "level_learned": 0
+                },
+                {
+                    "move": "will-o-wisp",
+                    "level_learned": 0
+                },
+                {
+                    "move": "facade",
+                    "level_learned": 0
+                },
+                {
+                    "move": "helping-hand",
+                    "level_learned": 1
+                },
+                {
+                    "move": "superpower",
+                    "level_learned": 0
+                },
+                {
+                    "move": "yawn",
+                    "level_learned": 1
+                },
+                {
+                    "move": "endeavor",
+                    "level_learned": 0
+                },
+                {
+                    "move": "secret-power",
+                    "level_learned": 0
+                },
+                {
+                    "move": "hyper-voice",
+                    "level_learned": 0
+                },
+                {
+                    "move": "weather-ball",
+                    "level_learned": 0
+                },
+                {
+                    "move": "fake-tears",
+                    "level_learned": 0
+                },
+                {
+                    "move": "overheat",
+                    "level_learned": 0
+                },
+                {
+                    "move": "covet",
+                    "level_learned": 0
+                },
+                {
+                    "move": "calm-mind",
+                    "level_learned": 34
+                },
+                {
+                    "move": "natural-gift",
+                    "level_learned": 0
+                },
+                {
+                    "move": "copycat",
+                    "level_learned": 1
+                },
+                {
+                    "move": "last-resort",
+                    "level_learned": 50
+                },
+                {
+                    "move": "flare-blitz",
+                    "level_learned": 45
+                },
+                {
+                    "move": "giga-impact",
+                    "level_learned": 0
+                },
+                {
+                    "move": "fire-fang",
+                    "level_learned": 43
+                },
+                {
+                    "move": "lava-plume",
+                    "level_learned": 78
+                },
+                {
+                    "move": "captivate",
+                    "level_learned": 0
+                },
+                {
+                    "move": "flame-charge",
+                    "level_learned": 0
+                },
+                {
+                    "move": "round",
+                    "level_learned": 0
+                },
+                {
+                    "move": "echoed-voice",
+                    "level_learned": 0
+                },
+                {
+                    "move": "stored-power",
+                    "level_learned": 0
+                },
+                {
+                    "move": "incinerate",
+                    "level_learned": 0
+                },
+                {
+                    "move": "retaliate",
+                    "level_learned": 0
+                },
+                {
+                    "move": "work-up",
+                    "level_learned": 0
+                },
+                {
+                    "move": "confide",
+                    "level_learned": 0
+                },
+                {
+                    "move": "mystical-fire",
+                    "level_learned": 0
+                },
+                {
+                    "move": "baby-doll-eyes",
+                    "level_learned": 9
+                },
+                {
+                    "move": "laser-focus",
+                    "level_learned": 0
+                },
+                {
+                    "move": "burning-jealousy",
+                    "level_learned": 0
+                },
+                {
+                    "move": "scorching-sands",
+                    "level_learned": 0
+                },
+                {
+                    "move": "tera-blast",
+                    "level_learned": 0
+                },
+                {
+                    "move": "trailblaze",
+                    "level_learned": 0
+                },
+                {
+                    "move": "alluring-voice",
+                    "level_learned": 0
+                },
+                {
+                    "move": "temper-flare",
+                    "level_learned": 0
+                }
+            ],
+            "TYPE": [
+                "fire"
+            ],
+            "EVOLUTION_LEVEL": 16,
+            "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png",
+            "local_image_path": "assets\\poke_image\\flareon.png"
+        }
+    },
+    "dachsbun": {
+        "level": 21,
+        "xp": 0,
+        "hp": 54,
+        "max_hp": 54,
+        "data": {
+            "id": 927,
+            "name": "dachsbun",
+            "height": 5,
+            "weight": 149,
+            "PV": 57,
+            "ATTACK stats": 80,
+            "DEFENS": 115,
+            "ATTACKSPE": 50,
+            "DEFENSE SPE": 80,
+            "VITESSE": 95,
+            "ATTACK list": [
+                {
+                    "move": "tackle",
+                    "level_learned": 1
+                },
+                {
+                    "move": "body-slam",
+                    "level_learned": 0
+                },
+                {
+                    "move": "take-down",
+                    "level_learned": 0
+                },
+                {
+                    "move": "double-edge",
+                    "level_learned": 38
+                },
+                {
+                    "move": "tail-whip",
+                    "level_learned": 6
+                },
+                {
+                    "move": "bite",
+                    "level_learned": 11
+                },
+                {
+                    "move": "growl",
+                    "level_learned": 1
+                },
+                {
+                    "move": "roar",
+                    "level_learned": 33
+                },
+                {
+                    "move": "hyper-beam",
+                    "level_learned": 0
+                },
+                {
+                    "move": "dig",
+                    "level_learned": 0
+                },
+                {
+                    "move": "agility",
+                    "level_learned": 0
+                },
+                {
+                    "move": "lick",
+                    "level_learned": 3
+                },
+                {
+                    "move": "rest",
+                    "level_learned": 0
+                },
+                {
+                    "move": "substitute",
+                    "level_learned": 0
+                },
+                {
+                    "move": "protect",
+                    "level_learned": 0
+                },
+                {
+                    "move": "scary-face",
+                    "level_learned": 0
+                },
+                {
+                    "move": "mud-slap",
+                    "level_learned": 0
+                },
+                {
+                    "move": "endure",
+                    "level_learned": 0
+                },
+                {
+                    "move": "charm",
+                    "level_learned": 42
+                },
+                {
+                    "move": "sleep-talk",
+                    "level_learned": 0
+                },
+                {
+                    "move": "baton-pass",
+                    "level_learned": 29
+                },
+                {
+                    "move": "rain-dance",
+                    "level_learned": 0
+                },
+                {
+                    "move": "sunny-day",
+                    "level_learned": 0
+                },
+                {
+                    "move": "crunch",
+                    "level_learned": 47
+                },
+                {
+                    "move": "psych-up",
+                    "level_learned": 0
+                },
+                {
+                    "move": "facade",
+                    "level_learned": 0
+                },
+                {
+                    "move": "helping-hand",
+                    "level_learned": 0
+                },
+                {
+                    "move": "endeavor",
+                    "level_learned": 0
+                },
+                {
+                    "move": "mud-shot",
+                    "level_learned": 0
+                },
+                {
+                    "move": "covet",
+                    "level_learned": 8
+                },
+                {
+                    "move": "last-resort",
+                    "level_learned": 53
+                },
+                {
+                    "move": "giga-impact",
+                    "level_learned": 0
+                },
+                {
+                    "move": "thunder-fang",
+                    "level_learned": 0
+                },
+                {
+                    "move": "ice-fang",
+                    "level_learned": 0
+                },
+                {
+                    "move": "fire-fang",
+                    "level_learned": 0
+                },
+                {
+                    "move": "work-up",
+                    "level_learned": 22
+                },
+                {
+                    "move": "snarl",
+                    "level_learned": 0
+                },
+                {
+                    "move": "draining-kiss",
+                    "level_learned": 0
+                },
+                {
+                    "move": "misty-terrain",
+                    "level_learned": 0
+                },
+                {
+                    "move": "play-rough",
+                    "level_learned": 18
+                },
+                {
+                    "move": "dazzling-gleam",
+                    "level_learned": 0
+                },
+                {
+                    "move": "baby-doll-eyes",
+                    "level_learned": 15
+                },
+                {
+                    "move": "psychic-fangs",
+                    "level_learned": 0
+                },
+                {
+                    "move": "stomping-tantrum",
+                    "level_learned": 0
+                },
+                {
+                    "move": "body-press",
+                    "level_learned": 0
+                },
+                {
+                    "move": "tera-blast",
+                    "level_learned": 0
+                },
+                {
+                    "move": "trailblaze",
+                    "level_learned": 0
+                },
+                {
+                    "move": "alluring-voice",
+                    "level_learned": 0
+                }
+            ],
+            "TYPE": [
+                "fairy"
+            ],
+            "EVOLUTION_LEVEL": 26,
+            "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/927.png",
+            "local_image_path": "assets\\poke_image\\dachsbun.png"
+        }
+    },
+    "klefki": {
+        "level": 23,
+        "xp": 0,
+        "hp": 59,
+        "max_hp": 59,
+        "data": {
+            "id": 707,
+            "name": "klefki",
+            "height": 2,
+            "weight": 30,
+            "PV": 57,
+            "ATTACK stats": 80,
+            "DEFENS": 91,
+            "ATTACKSPE": 80,
+            "DEFENSE SPE": 87,
+            "VITESSE": 75,
+            "ATTACK list": [
+                {
+                    "move": "cut",
+                    "level_learned": 0
+                },
+                {
+                    "move": "tackle",
+                    "level_learned": 1
+                },
+                {
+                    "move": "hyper-beam",
+                    "level_learned": 0
+                },
+                {
+                    "move": "thunder-wave",
+                    "level_learned": 0
+                },
+                {
+                    "move": "toxic",
+                    "level_learned": 0
+                },
+                {
+                    "move": "psychic",
+                    "level_learned": 0
+                },
+                {
+                    "move": "double-team",
+                    "level_learned": 0
+                },
+                {
+                    "move": "light-screen",
+                    "level_learned": 0
+                },
+                {
+                    "move": "reflect",
+                    "level_learned": 0
+                },
+                {
+                    "move": "swift",
+                    "level_learned": 0
+                },
+                {
+                    "move": "rest",
+                    "level_learned": 0
+                },
+                {
+                    "move": "substitute",
+                    "level_learned": 0
+                },
+                {
+                    "move": "thief",
+                    "level_learned": 0
+                },
+                {
+                    "move": "snore",
+                    "level_learned": 0
+                },
+                {
+                    "move": "protect",
+                    "level_learned": 0
+                },
+                {
+                    "move": "spikes",
+                    "level_learned": 15
+                },
+                {
+                    "move": "lock-on",
+                    "level_learned": 0
+                },
+                {
+                    "move": "sandstorm",
+                    "level_learned": 0
+                },
+                {
+                    "move": "endure",
+                    "level_learned": 0
+                },
+                {
+                    "move": "swagger",
+                    "level_learned": 0
+                },
+                {
+                    "move": "attract",
+                    "level_learned": 0
+                },
+                {
+                    "move": "sleep-talk",
+                    "level_learned": 0
+                },
+                {
+                    "move": "return",
+                    "level_learned": 0
+                },
+                {
+                    "move": "frustration",
+                    "level_learned": 0
+                },
+                {
+                    "move": "safeguard",
+                    "level_learned": 0
+                },
+                {
+                    "move": "hidden-power",
+                    "level_learned": 0
+                },
+                {
+                    "move": "rain-dance",
+                    "level_learned": 0
+                },
+                {
+                    "move": "sunny-day",
+                    "level_learned": 0
+                },
+                {
+                    "move": "psych-up",
+                    "level_learned": 0
+                },
+                {
+                    "move": "torment",
+                    "level_learned": 32
+                },
+                {
+                    "move": "facade",
+                    "level_learned": 0
+                },
+                {
+                    "move": "magic-coat",
+                    "level_learned": 0
+                },
+                {
+                    "move": "recycle",
+                    "level_learned": 40
+                },
+                {
+                    "move": "imprison",
+                    "level_learned": 36
+                },
+                {
+                    "move": "secret-power",
+                    "level_learned": 0
+                },
+                {
+                    "move": "astonish",
+                    "level_learned": 8
+                },
+                {
+                    "move": "metal-sound",
+                    "level_learned": 12
+                },
+                {
+                    "move": "iron-defense",
+                    "level_learned": 0
+                },
+                {
+                    "move": "covet",
+                    "level_learned": 0
+                },
+                {
+                    "move": "calm-mind",
+                    "level_learned": 0
+                },
+                {
+                    "move": "heal-block",
+                    "level_learned": 50
+                },
+                {
+                    "move": "last-resort",
+                    "level_learned": 0
+                },
+                {
+                    "move": "magnet-rise",
+                    "level_learned": 0
+                },
+                {
+                    "move": "switcheroo",
+                    "level_learned": 0
+                },
+                {
+                    "move": "giga-impact",
+                    "level_learned": 0
+                },
+                {
+                    "move": "mirror-shot",
+                    "level_learned": 34
+                },
+                {
+                    "move": "flash-cannon",
+                    "level_learned": 0
+                },
+                {
+                    "move": "defog",
+                    "level_learned": 0
+                },
+                {
+                    "move": "trick-room",
+                    "level_learned": 0
+                },
+                {
+                    "move": "psyshock",
+                    "level_learned": 0
+                },
+                {
+                    "move": "magic-room",
+                    "level_learned": 44
+                },
+                {
+                    "move": "foul-play",
+                    "level_learned": 27
+                },
+                {
+                    "move": "round",
+                    "level_learned": 0
+                },
+                {
+                    "move": "stored-power",
+                    "level_learned": 0
+                },
+                {
+                    "move": "draining-kiss",
+                    "level_learned": 18
+                },
+                {
+                    "move": "crafty-shield",
+                    "level_learned": 23
+                },
+                {
+                    "move": "misty-terrain",
+                    "level_learned": 0
+                },
+                {
+                    "move": "play-rough",
+                    "level_learned": 43
+                },
+                {
+                    "move": "fairy-wind",
+                    "level_learned": 5
+                },
+                {
+                    "move": "fairy-lock",
+                    "level_learned": 1
+                },
+                {
+                    "move": "confide",
+                    "level_learned": 0
+                },
+                {
+                    "move": "dazzling-gleam",
+                    "level_learned": 0
+                },
+                {
+                    "move": "steel-beam",
+                    "level_learned": 0
+                },
+                {
+                    "move": "skitter-smack",
+                    "level_learned": 0
+                },
+                {
+                    "move": "tera-blast",
+                    "level_learned": 0
+                }
+            ],
+            "TYPE": [
+                "steel",
+                "fairy"
+            ],
+            "EVOLUTION_LEVEL": null,
+            "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/707.png",
+            "local_image_path": "assets\\poke_image\\klefki.png"
+        }
+    }
+}

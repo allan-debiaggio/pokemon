@@ -60,36 +60,36 @@ for i in range(1, 51):
                 local_image_path = os.path.join(images_folder, f"{p.name}.png")
                 with open(local_image_path, "wb") as img_file:
                     img_file.write(response.content)
-                print(f"Image de {p.name} téléchargée.")
+                print(f"Image of {p.name} downloaded.")
             else:
-                print(f"Erreur {response.status_code} pour l'image de {p.name}.")
+                print(f"Error {response.status_code} for the image of {p.name}.")
         else:
-            print(f"Aucune image trouvée pour {p.name}.")
+            print(f"No image found for {p.name}.")
         
         pokemon_data[p.name] = {
             "id": p.id,
             "name": p.name,
             "height": p.height,
             "weight": p.weight,
-            "PV": stats.get("hp"),
-            "ATTACK stats": stats.get("attack"),
-            "DEFENS": stats.get("defense"),
-            "ATTACKSPE": stats.get("special-attack"),
-            "DEFENSE SPE": stats.get("special-defense"),
-            "VITESSE": stats.get("speed"),
-            "ATTACK list": moves_list,
+            "HP": stats.get("hp"),
+            "ATTACK": stats.get("attack"),
+            "DEFENSE": stats.get("defense"),
+            "SPECIAL_ATTACK": stats.get("special-attack"),
+            "SPECIAL_DEFENSE": stats.get("special-defense"),
+            "SPEED": stats.get("speed"),
+            "MOVES": moves_list,
             "TYPE": [t.type.name for t in p.types],
             "EVOLUTION_LEVEL": evolution_level,
             "image_url": image_url,
             "local_image_path": local_image_path
         }
         
-        print(f"Pokémon {p.name} traité.")
+        print(f"Pokémon {p.name} processed.")
         
     except Exception as e:
-        print(f"Erreur lors du traitement du Pokémon n°{i}: {e}")
+        print(f"Error processing Pokémon #{i}: {e}")
 
 with open("pokemon_data.json", "w", encoding="utf-8") as json_file:
     json.dump(pokemon_data, json_file, indent=4, ensure_ascii=False)
 
-print("JSON créé et images téléchargées avec succès.")
+print("JSON created and images downloaded successfully.")

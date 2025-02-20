@@ -5,7 +5,7 @@
         "height": 7,
         "weight": 69,
         "PV": 45,
-        "ATTACK stats": 49,
+        "ATTACK stats": 4009,
         "DEFENS": 49,
         "ATTACKSPE": 65,
         "DEFENSE SPE": 65,
@@ -4769,4 +4769,4 @@
         "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/50.png",
         "local_image_path": "assets\\poke_image\\diglett.png"
     }
-}
+}   
